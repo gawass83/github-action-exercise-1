@@ -9,11 +9,17 @@ jobs:
   install:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+        name: "checkout code"
       - name: "install dependency"
         run: npm ci
   lint:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+        name: "checkout code"
+      - name: "install dependency"
+        run: npm ci
       - name: "echoing"
         run: echo "Starting the linting process"
       - name: "lets start linting"
@@ -22,6 +28,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+        name: "checkout code"
+      - name: "install dependency"
+        run: npm ci
       - name: "echoing"
         run: echo "Starting the testing process"
       - name: "lets start testing"
@@ -32,6 +42,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         name: "checkout code"
+      - name: "install dependency"
+        run: npm ci
       - name: "echoing"
         run: echo "Starting the build process" |
              npm run build
