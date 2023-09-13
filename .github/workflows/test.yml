@@ -5,28 +5,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-  install:
-    runs-on: ubuntu-latest
-    steps:
+        name: "checkout code"
+  # install:
+  #   runs-on: ubuntu-latest
+  #   steps:
       - name: "install dependency"
-        run: npm install
-  lint:
-    runs-on: ubuntu-latest
-    steps:
+        run: npm ci
+  # lint:
+  #   runs-on: ubuntu-latest
+  #   steps:
       - name: "echoing"
         run: echo "Starting the linting process"
       - name: "lets start linting"
         run: npm run lint
-  test:
-    runs-on: ubuntu-latest
-    steps:
+      - run: echo "Linting process is now completed"
+  # test:
+  #   runs-on: ubuntu-latest
+  #   steps:
       - name: "echoing"
         run: echo "Starting the testing process"
       - name: "lets start testing"
         run: npm run test
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
+      - run: echo "ending the testing process"
+  # deploy:
+  #   runs-on: ubuntu-latest
+  #   steps:
       - name: "echoing"
         run: echo "Starting the deploy process"
       
