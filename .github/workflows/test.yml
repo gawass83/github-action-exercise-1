@@ -1,0 +1,32 @@
+name: testing lint, test and deploy
+on: [push]
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "install dependency"
+        run: npm install
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "echoing"
+        run: echo "Starting the linting process"
+      - name: "lets start linting"
+        run: npm run lint
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "echoing"
+        run: echo "Starting the testing process"
+      - name: "lets start testing"
+        run: npm run test
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "echoing"
+        run: echo "Starting the deploy process"
+      
