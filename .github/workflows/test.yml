@@ -4,7 +4,7 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
   install:
     runs-on: ubuntu-latest
     steps:
