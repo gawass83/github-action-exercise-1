@@ -6,30 +6,32 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         name: "checkout code"
-  # install:
-  #   runs-on: ubuntu-latest
-  #   steps:
+  install:
+    runs-on: ubuntu-latest
+    steps:
       - name: "install dependency"
         run: npm ci
-  # lint:
-  #   runs-on: ubuntu-latest
-  #   steps:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
       - name: "echoing"
         run: echo "Starting the linting process"
       - name: "lets start linting"
         run: npm run lint
       - run: echo "Linting process is now completed"
-  # test:
-  #   runs-on: ubuntu-latest
-  #   steps:
+  test:
+    runs-on: ubuntu-latest
+    steps:
       - name: "echoing"
         run: echo "Starting the testing process"
       - name: "lets start testing"
         run: npm run test
       - run: echo "ending the testing process"
-  # deploy:
-  #   runs-on: ubuntu-latest
-  #   steps:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: "checkout code"
       - name: "echoing"
         run: echo "Starting the build process" |
              npm run build
