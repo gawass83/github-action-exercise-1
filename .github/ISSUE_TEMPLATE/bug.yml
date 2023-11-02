@@ -1,7 +1,7 @@
   name: Bug Report
   description: Report a bug in Minima.
   labels: ["bug"]
-  title: "[BUG] "
+  title: "[MINIMA BUG] "
   body:
     - type: checkboxes
       id: checks
