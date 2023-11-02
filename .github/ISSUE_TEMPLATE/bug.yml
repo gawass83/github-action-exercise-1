@@ -44,7 +44,7 @@
       validations:
         required: true
     - type: dropdown
-      id: frequency
+      id: Frequency
       attributes:
         label: frequency
         description: How often does this occur?
@@ -66,7 +66,7 @@
       id: context
       attributes:
         label: Additional Context
-        description: Add any additional context or images if any. Drag and Drop works for attachments.
+        description: Add attachments/images if any. Drag and Drop works for attachments.
       validations:
         required: false
     - type: markdown
