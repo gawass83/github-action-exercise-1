@@ -1,8 +1,15 @@
 name: Bug Report
 description: Report a bug in Minima.
 labels: ["bug"]
-title: "[MINIMA BUG] "
+title: "[BUG] "
 body:
+  - type: checkboxes
+    attributes: 
+  |   label: Have you checked if their is an existing issue for this?
+      description: Please check if issue exists
+      options:
+      - label: I have searched the existing issues
+        required: true
   - type: textarea
     id: description
     attributes:
