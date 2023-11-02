@@ -62,6 +62,7 @@
         render: Shell
       validations:
         required: false
+        ---
     - type: textarea
       id: context
       attributes:
