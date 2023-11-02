@@ -9,7 +9,7 @@
         label: Have you checked if their is an existing issue for this?
         description: Check if issue exists.
         options:
-        - label: Please tick if issue exists
+        - label: Please tick if related issue does not exist
           required: true
       validations:
         required: true
