@@ -54,21 +54,21 @@
           - Always
       validations:
         required: true
-    # - type: textarea
-    #   id: logs
-    #   attributes:
-    #     label: Relevant Output or Stack Trace
-    #     description: Please share any relevant log output regarding the bug.
-    #     render: Shell
-    #   validations:
-    #     required: false
-    # - type: textarea
-    #   id: context
-    #   attributes:
-    #     label: Additional Context
-    #     description: Add any additional context about the problem here.
-    #   validations:
-    #     required: false
+    - type: textarea
+      id: logs
+      attributes:
+        label: Relevant Output or Stack Trace
+        description: Please share any relevant log output regarding the bug.
+        render: Shell
+      validations:
+        required: false
+    - type: textarea
+      id: context
+      attributes:
+        label: Additional Context
+        description: Add any additional context about the problem here.
+      validations:
+        required: false
     - type: markdown
       attributes:
         value: |
