@@ -62,7 +62,6 @@
         render: Shell
       validations:
         required: false
-        ---
     - type: textarea
       id: context
       attributes:
@@ -70,6 +69,10 @@
         description: Add any additional context about the problem here.
       validations:
         required: false
+    - type: markdown
+      attributes:
+        value: |
+          ---
     - type: markdown
       attributes:
         value: |
