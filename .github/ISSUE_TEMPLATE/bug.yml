@@ -7,9 +7,9 @@
       id: checks
       attributes: 
         label: Have you checked if their is an existing issue for this?
-        description: Please tick if issue exists
+        description: Check if issue exists.
         options:
-        - label: I have searched the existing issues
+        - label: Please tick if issue exists
           required: true
       validations:
         required: true
