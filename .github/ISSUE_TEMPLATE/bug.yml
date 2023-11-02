@@ -11,6 +11,8 @@
         options:
         - label: I have searched the existing issues
           required: true
+      validations:
+        required: true
     - type: textarea
       id: description
       attributes:
@@ -18,7 +20,8 @@
         description: Please provide a clear and concise description of the bug you encountered.
       validations:
         required: true
-
+      validations:
+        required: true
     - type: textarea
       id: reproduce
       attributes:
@@ -26,7 +29,6 @@
         description: Please outline the steps you followed that led to the bug.
       validations:
         required: true
-
     - type: textarea
       id: expected
       attributes:
@@ -34,7 +36,6 @@
         description: What were you expecting to happen when you performed these steps?
       validations:
         required: true
-
     - type: textarea
       id: actual
       attributes:
@@ -42,7 +43,6 @@
         description: What actually happened?
       validations:
         required: true
-
     - type: dropdown
       id: frequency
       attributes:
@@ -54,7 +54,6 @@
           - Always
       validations:
         required: true
-
     - type: textarea
       id: logs
       attributes:
@@ -63,7 +62,6 @@
         render: Shell
       validations:
         required: false
-
     - type: textarea
       id: context
       attributes:
@@ -71,7 +69,6 @@
         description: Add any additional context about the problem here.
       validations:
         required: false
-
     - type: markdown
       attributes:
         value: |
