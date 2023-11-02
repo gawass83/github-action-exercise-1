@@ -44,9 +44,9 @@
       validations:
         required: true
     - type: dropdown
-      id: Frequency
+      id: frequency
       attributes:
-        label: frequency
+        label: Frequency
         description: How often does this occur?
         multiple: true
         options:
