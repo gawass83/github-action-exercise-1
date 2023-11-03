@@ -1,0 +1,56 @@
+name: Feature Request
+description: Suggest an idea for this project.
+labels: ["feature"]
+title: "[MINIMA FEATURE] - "
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the feature you would like to see in this project.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What impact you think this feature will add to Minima?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Effort
+      description: How much effort is required to implement this feature?
+      multiple: false
+      options:
+        - Low Effort
+        - Medium Effort
+        - High Effort
+    validations:
+      required: true
+
+  - type: dropdown
+    id: benefit
+    attributes:
+      label: Benefit
+      description: Which tool/Asset is this feature related to?
+      multiple: true
+      options:
+        - Slack
+        - PagerDuty
+        - NewRelic
+        - Dynatrace
+        - Minima in General
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: This may include any image/text/diagram etc.
+    validations:
+      required: false
